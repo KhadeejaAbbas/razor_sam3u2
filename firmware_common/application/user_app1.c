@@ -89,9 +89,61 @@ Requires:
 Promises:
 - NONE
 
+
+
 */
+
+
 void UserApp1Initialize(void)
 {
+   /*khadeeja :) wrote the below code*/
+
+    /* PART 4 */
+    
+    /* All discrete LEDs to off */
+    LedOff(WHITE);
+    LedOff(PURPLE);
+    LedOff(BLUE);
+    LedOff(CYAN);
+    LedOff(GREEN);
+    LedOff(YELLOW);
+    LedOff(ORANGE);
+    LedOff(RED);
+
+    /* Backlight to white */
+    LedOn(LCD_RED);
+    LedOn(LCD_GREEN);
+    LedOn(LCD_BLUE);
+
+    /*ur not done this one, u need to do the UserApp1SM_Idle thing*/
+    
+    
+    /* END OF PART 4 */
+    
+    
+    /* PART 2 */
+    /* Initialize all unused LEDs to off */
+    // LedOff(CYAN); //cyan looks more like green
+    // LedOff(GREEN); //green looks more like pukish yellow
+    // LedOn(YELLOW); //yellow is orange
+    // LedOff(ORANGE); // orange is orange red
+    /* End of PART 2 */
+    
+    /* Turn on an LED using the ON function */
+    //LedOff(PURPLE);
+    /* PART 2 */
+    //LedOff(BLUE);
+    /* End of PART 2 */
+
+    /* Turn on an LED using the TOGGLE function */
+    //LedToggle(PURPLE);
+    
+    /* Set an LED to blink at 2Hz */
+    //LedBlink(RED, LED_2HZ);
+    
+    /* Set an LED to the dimmest state we have (5% duty cycle) */
+    //LedPWM(WHITE, LED_PWM_5);
+    //LedPWM(RED, LED_PWM_5);
   /* If good initialization, set state to Idle */
   if( 1 )
   {
@@ -138,10 +190,130 @@ State Machine Function Definitions
 **********************************************************************************************************************/
 /*-------------------------------------------------------------------------------------------------------------------*/
 /* What does this state do? */
+
+/* What does this state do? */ 
 static void UserApp1SM_Idle(void)
 {
+  /* Andy wrote this code to show me how toggle works */
+  // static u16 count;
+
+  // count++;
+  // if (count > 500)
+  // {
+  //   LedToggle(PURPLE);
+  //   count = 0;
+  // }
+  /* End of Andy's code */
+  /* PART 3 */
+    // static u16 u16BlinkCount = 0;
     
+    // u16BlinkCount++;
+    // if(u16BlinkCount == 660)
+    // {
+    //   u16BlinkCount = 0;
+    //   LedToggle(PURPLE);
+    // }
+  /* END OF PART 3 */
+  /* PART 4 */
+    static u16 u16BlinkCount = 0;
+    static u8 u8Counter = 0;
+    static u8 u8ColorIndex = 0;
+    
+    u16BlinkCount++;
+    if(u16BlinkCount == 250)
+    {
+      u16BlinkCount = 0;
+
+      /* Update the counter and roll at 16 */
+      u8Counter++;
+      if(u8Counter == 16)
+      {
+        u8Counter = 0;
+      }
+      /* Manage the backlight color */
+      u8ColorIndex++;
+      if(u8ColorIndex == 4)
+      {
+        u8ColorIndex = 0;
+      }
+    //the blinking includes turning off and on the led
+    /* END OF PART 4 */
+    /* PART 5 */
+      /* Parse the current count to set the LEDs.  RED is bit 0, ORANGE is bit 1, YELLOW is bit 2, Green is bit 3. */
+      
+      if(u8Counter & 0x01)
+      {
+        LedOn(RED);
+      }
+      else
+      {
+        LedOff(RED);
+      }
+
+      if(u8Counter & 0x02)
+      {
+        LedOn(ORANGE);
+      }
+      else
+      {
+        LedOff(ORANGE);
+      }
+
+      if(u8Counter & 0x04)
+      {
+        LedOn(YELLOW);
+      }
+      else
+      {
+        LedOff(YELLOW);
+      }
+
+      if(u8Counter & 0x08)
+      {
+        LedOn(GREEN);
+      }
+      else
+      {
+        LedOff(GREEN);
+      }
+    }
+    /* END OF PART 5 */   
+    //idk where this link below goes, it either goes within part 5, outside all the parts, or is a repeat of a command above
+    //} /* end if(u16BlinkCount == 250) */
+
+    /* PART 6 */
+    //static u16 u16BlinkCount = 0;
+    //static u8 u8Counter = 0;
+    //static u8 u8ColorIndex = 0;
+    
+    //u16BlinkCount++;
+    //if(u16BlinkCount == 250)
+    //{
+      //u16BlinkCount == 250;
+
+      /* Update the counter and roll at 16 */
+      //u8Counter++;
+      /* Manage the backlight color */
+      // u8ColorIndex++;
+      // if(u8ColorIndex == 7)
+      // {
+      //   u8ColorIndex = 0;
+      // }
+
+      /* Set the backlight color: white (all), purple (blue + red), blue, cyan (blue + green), green, yellow (green + red), red */
+      switch(u8ColorIndex)
+      {
+        case 0: /* white */
+          LedOn(LCD_RED);
+          LedOn(LCD_GREEN);
+          LedOn(LCD_BLUE);
+          break;
+        case 1: /* purple */
+          LedOn(LCD_RED);
+          LedOff(LCD_GREEN);
+      }
 } /* end UserApp1SM_Idle() */
+   
      
 
 /*-------------------------------------------------------------------------------------------------------------------*/
