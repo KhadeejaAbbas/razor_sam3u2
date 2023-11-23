@@ -45,8 +45,9 @@ All Global variable names shall start with "G_<type>UserApp1"
 ***********************************************************************************************************************/
 /* New variables */
 volatile u32 G_u32UserApp1Flags;                          /*!< @brief Global state flags */
-
-
+static bool bYellowBlink = FALSE;
+static LedRateType aeBlinkRate[] = {LED_1HZ, LED_2HZ, LED_4HZ, LED_8HZ};
+static u8 u8BlinkRateIndex =0;
 /*--------------------------------------------------------------------------------------------------------------------*/
 /* Existing variables (defined in other files -- should all contain the "extern" keyword) */
 extern volatile u32 G_u32SystemTime1ms;                   /*!< @brief From main.c */
@@ -92,6 +93,15 @@ Promises:
 */
 void UserApp1Initialize(void)
 {
+  LedOff(WHITE);
+  LedOff(PURPLE);
+  LedOff(BLUE);
+  LedOff(CYAN);
+  LedOff(GREEN);
+  LedOff(YELLOW);
+  LedOff(ORANGE);
+  LedOff(RED);
+
   /* If good initialization, set state to Idle */
   if( 1 )
   {
@@ -138,11 +148,68 @@ State Machine Function Definitions
 **********************************************************************************************************************/
 /*-------------------------------------------------------------------------------------------------------------------*/
 /* What does this state do? */
+
 static void UserApp1SM_Idle(void)
 {
-    
+    if (IsButtonPressed(BUTTON0)) {
+      /* the button is currently pressed, so make sure the LED is on */
+      LedOn(WHITE);
+    }
+    else{
+      /* button is not pressed so make sure LED is off*/
+      LedOff(WHITE);
+    }   
+
+
+   
+    if (WasButtonPressed(BUTTON1)){
+      ButtonAcknowledge(BUTTON1);
+      if (bYellowBlink) 
+      {
+        u8BlinkRateIndex++;
+        if(u8BlinkRateIndex == 4){
+          u8BlinkRateIndex = 0;
+        }
+        LedBlink(YELLOW, aeBlinkRate[u8BlinkRateIndex]);
+        // bYellowBlink = FALSE;
+        // LedOff(YELLOW);
+      }
+      else
+      {
+        bYellowBlink = TRUE;
+        LedBlink(YELLOW, aeBlinkRate[u8BlinkRateIndex]);
+        // u8BlinkRateIndex++;
+        // if(u8BlinkRateIndex == 4){
+        //   u8BlinkRateIndex = 0;
+        // }
+      }
+    }
+    if (IsButtonHeld(BUTTON3, 2000)){
+      LedOn(CYAN);
+    }
+    else{
+      LedOff(CYAN);
+    }
+
+    if (IsButtonPressed(BUTTON1)) {
+      /* the button is currently pressed, so make sure the LED is on */
+      LedOn(PURPLE);
+    }
+    else{
+      /* button is not pressed so make sure LED is off*/
+      LedOff(PURPLE);
+    }   
+
+    if (IsButtonPressed(BUTTON2)) {
+      /* the button is currently pressed, so make sure the LED is on */
+      LedOn(BLUE);
+    }
+    else{
+      /* button is not pressed so make sure LED is off*/
+      LedOff(BLUE);
+    }   
 } /* end UserApp1SM_Idle() */
-     
+    
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 /* Handle an error */
