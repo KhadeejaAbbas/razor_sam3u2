@@ -113,7 +113,7 @@ def configure(ctx):
 
     # Find the Jlink tools. Not needed for much, just if you want to flash the firmware through waf
     # directly.
-    ctx.find_program("JLink", var="JLINK", path_list=get_jlink_srch_path())
+    ctx.find_program("JLinkExe", var="JLINK", path_list=get_jlink_srch_path())
 
 
 # The "build" command is the default one run by waf if you don't specify anthing.
@@ -258,9 +258,11 @@ def build(ctx):
 
 
 def get_jlink_srch_path():
+
     """
     Get search path to use for JLink programs/DLLs
     """
+    return "/Applications/SEGGER/JLink"
     # On non-windows trust in the user/os to have a path set already.
     if not Utils.is_win32:
         return None
@@ -280,12 +282,14 @@ def get_gcc_srch_path():
     If your gcc is older this may need to be modified (or just make sure it's on the path when you
     run configure).
     """
+    return '/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/'
     if not Utils.is_win32:
         return None  # Non-windows platforms we just use whatever is on the path.
 
     # Otherwise extend with anything we find in the registry or at the default install location.
 
-    # Import a few things JIT. Some of these will only work on windows.
+    # Import a few things JIT. Some
+    #  of these will only work on windows.
     from collections import defaultdict
     import winreg
     import subprocess
