@@ -4,7 +4,8 @@ doxygen/html
 .lock-waf_*
 
 # Waf's dir it unpacks itself to.
-/waf3-*/
+waf3-*/
+.waf3-*/
 
 # All build output
 /build/
