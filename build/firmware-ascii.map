@@ -1,0 +1,981 @@
+Archive member included to satisfy reference by file (symbol)
+
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+                              firmware_common/drivers/ant.c.1.o (malloc)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                              /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o) (_malloc_r)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+                              /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o) (__malloc_lock)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+                              firmware_common/bsp/board_cstartup_gcc.c.1.o (memset)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+                              firmware_common/bsp/sbrk.c.1.o (errno)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+                              /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o) (_impure_ptr)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+                              /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o) (_sbrk_r)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                              /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o) (__retarget_lock_acquire_recursive)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+                              firmware_common/bsp/board_cstartup_gcc.c.1.o (memcpy)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+                              firmware_common/drivers/utilities.c.1.o (strcpy)
+/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+                              /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o) (_free_r)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM0             0x00080000         0x00020000         xr!w
+RAM0             0x20000000         0x00004000         axrw
+RAM1             0x20080000         0x00004000         axrw
+NAND_RAM         0x20100000         0x00001080         arw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD firmware_common/cmsis/gcc_support.s.1.o
+LOAD firmware_common/bsp/board_startup_gcc.s.1.o
+LOAD firmware_common/bsp/kill_x_cycles.s.1.o
+LOAD firmware_common/bsp/board_cstartup_gcc.c.1.o
+LOAD firmware_common/bsp/sbrk.c.1.o
+LOAD firmware_ascii/bsp/eief1-pcb-01.c.1.o
+LOAD firmware_common/drivers/adc12.c.1.o
+LOAD firmware_common/drivers/ant.c.1.o
+LOAD firmware_common/drivers/ant_api.c.1.o
+LOAD firmware_common/drivers/buttons.c.1.o
+LOAD firmware_common/drivers/exceptions.c.1.o
+LOAD firmware_common/drivers/interrupts.c.1.o
+LOAD firmware_common/drivers/leds.c.1.o
+LOAD firmware_common/drivers/messaging.c.1.o
+LOAD firmware_common/drivers/sam3u_i2c.c.1.o
+LOAD firmware_common/drivers/sam3u_spi.c.1.o
+LOAD firmware_common/drivers/sam3u_ssp.c.1.o
+LOAD firmware_common/drivers/sam3u_uart.c.1.o
+LOAD firmware_common/drivers/timer.c.1.o
+LOAD firmware_common/drivers/utilities.c.1.o
+LOAD firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+LOAD firmware_common/application/debug.c.1.o
+LOAD firmware_common/application/main.c.1.o
+LOAD firmware_common/application/user_app1.c.1.o
+LOAD firmware_common/application/user_app2.c.1.o
+LOAD firmware_common/application/user_app3.c.1.o
+START GROUP
+LOAD /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a
+LOAD /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a
+LOAD /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+                0x00001000                        _stack_size = 0x1000
+                0x00004000                        _heap_size = 0x4000
+
+.intvec         0x00080000      0x100
+ *(.intvec)
+ .intvec        0x00080000      0x100 firmware_common/bsp/board_cstartup_gcc.c.1.o
+                0x00080000                vector_table
+
+.text           0x00080100     0x5448
+ *(.text* .rodata*)
+ .text          0x00080100        0x6 firmware_common/cmsis/gcc_support.s.1.o
+                0x00080100                __RBIT
+ *fill*         0x00080106        0x2 
+ .text          0x00080108       0x14 firmware_common/bsp/board_startup_gcc.s.1.o
+                0x00080108                _start
+ .text          0x0008011c       0x10 firmware_common/bsp/kill_x_cycles.s.1.o
+                0x0008011c                kill_x_cycles
+ .text          0x0008012c       0x58 firmware_common/bsp/board_cstartup_gcc.c.1.o
+                0x0008012c                c_startup
+ .text          0x00080184       0x3c firmware_common/bsp/sbrk.c.1.o
+                0x00080184                _sbrk
+ .text          0x000801c0      0x2e8 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+                0x000801c0                WatchDogSetup
+                0x000801d0                ClockSetup
+                0x0008027c                GpioSetup
+                0x0008035c                SysTickSetup
+                0x00080380                SystemTimeCheck
+                0x000803e0                SystemSleep
+                0x0008041c                PWMSetupAudio
+                0x00080454                PWMAudioSetFrequency
+                0x00080490                PWMAudioOn
+                0x0008049c                PWMAudioOff
+ .rodata.str1.4
+                0x000804a8       0x1d firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ *fill*         0x000804c5        0x3 
+ .rodata        0x000804c8       0x78 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+                0x000804c8                G_asBspButtonConfigurations
+                0x000804e8                G_asBspLedConfigurations
+ .text          0x00080540      0x180 firmware_common/drivers/adc12.c.1.o
+                0x00080540                Adc12DefaultCallback
+                0x00080544                Adc12AssignCallback
+                0x00080580                Adc12StartConversion
+                0x000805b4                Adc12Initialize
+                0x00080650                Adc12RunActiveState
+                0x00080660                ADCC0_IrqHandler
+ .rodata.str1.4
+                0x000806c0       0x2d firmware_common/drivers/adc12.c.1.o
+ *fill*         0x000806ed        0x3 
+ .rodata        0x000806f0        0x3 firmware_common/drivers/adc12.c.1.o
+ *fill*         0x000806f3        0x1 
+ .text          0x000806f4      0xf60 firmware_common/drivers/ant.c.1.o
+                0x00080790                AntTxFlowControlCallback
+                0x000807a8                AntRxFlowControlCallback
+                0x000812e4                AntCalculateTxChecksum
+                0x000813d4                AntQueueOutgoingMessage
+                0x00081478                AntDeQueueApplicationMessage
+                0x000814a0                AntInitialize
+                0x00081644                AntRunActiveState
+ .rodata.str1.4
+                0x00081654      0x17a firmware_common/drivers/ant.c.1.o
+ *fill*         0x000817ce        0x2 
+ .text          0x000817d0      0x534 firmware_common/drivers/ant_api.c.1.o
+                0x000818b8                AntRadioStatusChannel
+                0x000818e8                AntAssignChannel
+                0x00081a78                AntUnassignChannelNumber
+                0x00081ab4                AntOpenChannelNumber
+                0x00081b10                AntOpenScanningChannel
+                0x00081b58                AntCloseChannelNumber
+                0x00081bb0                AntQueueBroadcastMessage
+                0x00081be4                AntQueueAcknowledgedMessage
+                0x00081c18                AntReadAppMessageBuffer
+                0x00081c7c                AntGetdBmAscii
+                0x00081cbc                AntApiInitialize
+                0x00081cf4                AntApiRunActiveState
+ .rodata.str1.4
+                0x00081d04      0x104 firmware_common/drivers/ant_api.c.1.o
+ .rodata        0x00081e08       0x20 firmware_common/drivers/ant_api.c.1.o
+ .text          0x00081e28      0x2b4 firmware_common/drivers/buttons.c.1.o
+                0x00081f64                IsButtonPressed
+                0x00081f7c                WasButtonPressed
+                0x00081f94                ButtonAcknowledge
+                0x00081fa8                IsButtonHeld
+                0x00081fd8                ButtonInitialize
+                0x0008206c                ButtonRunActiveState
+                0x0008207c                ButtonStartDebounce
+ .rodata.str1.4
+                0x000820dc       0x14 firmware_common/drivers/buttons.c.1.o
+ .text          0x000820f0       0x50 firmware_common/drivers/exceptions.c.1.o
+                0x000820f0                IrqHandlerNotUsed
+                0x000820f2                NMI_Handler
+                0x000820f6                MemManage_Handler
+                0x000820f8                BusFault_Handler
+                0x000820fa                UsageFault_Handler
+                0x000820fc                SVC_Handler
+                0x000820fe                DebugMon_Handler
+                0x00082100                PendSV_Handler
+                0x00082104                SYS_IrqHandler
+                0x00082106                SUPC_IrqHandler
+                0x00082108                RSTC_IrqHandler
+                0x0008210a                RTC_IrqHandler
+                0x0008210c                RTT_IrqHandler
+                0x0008210e                WDT_IrqHandler
+                0x00082110                PMC_IrqHandler
+                0x00082112                EFC0_IrqHandler
+                0x00082114                EFC1_IrqHandler
+                0x00082118                HSMC4_IrqHandler
+                0x0008211e                PIOC_IrqHandler
+                0x00082124                USART3_IrqHandler
+                0x00082126                MCI0_IrqHandler
+                0x0008212a                TWI1_IrqHandler
+                0x0008212e                SSC0_IrqHandler
+                0x00082130                TC0_IrqHandler
+                0x00082134                TC2_IrqHandler
+                0x00082136                PWM_IrqHandler
+                0x0008213a                ADCC1_IrqHandler
+                0x0008213c                HDMA_IrqHandler
+                0x0008213e                UDPD_IrqHandler
+ .text          0x00082140      0x144 firmware_common/drivers/interrupts.c.1.o
+                0x00082140                InterruptSetup
+                0x00082190                SysTick_Handler
+                0x000821d0                PIOA_IrqHandler
+                0x00082210                PIOB_IrqHandler
+                0x00082250                HardFault_Handler
+ .rodata        0x00082284       0x20 firmware_common/drivers/interrupts.c.1.o
+ .text          0x000822a4      0x2c0 firmware_common/drivers/leds.c.1.o
+                0x000822a4                LedOn
+                0x000822f0                LedOff
+                0x00082414                LedToggle
+                0x00082448                LedBlink
+                0x00082460                LedPWM
+                0x0008247c                LedInitialize
+                0x00082554                LedRunActiveState
+ .rodata.str1.4
+                0x00082564       0x16 firmware_common/drivers/leds.c.1.o
+ *fill*         0x0008257a        0x2 
+ .text          0x0008257c      0x2cc firmware_common/drivers/messaging.c.1.o
+                0x000825c4                QueryMessageStatus
+                0x00082604                MessagingInitialize
+                0x000826ac                MessagingRunActiveState
+                0x000826bc                QueueMessage
+                0x000827c4                DeQueueMessage
+                0x00082824                UpdateMessageStatus
+ .text          0x00082848      0x590 firmware_common/drivers/sam3u_i2c.c.1.o
+                0x00082af8                TwiInitialize
+                0x00082bbc                TwiRunActiveState
+                0x00082bcc                TwiManualMode
+                0x00082c34                TwiReadData
+                0x00082cb8                TwiWriteData
+                0x00082d44                TWI0_IrqHandler
+ .rodata.str1.4
+                0x00082dd8       0x7f firmware_common/drivers/sam3u_i2c.c.1.o
+ *fill*         0x00082e57        0x1 
+ .text          0x00082e58      0x438 firmware_common/drivers/sam3u_spi.c.1.o
+                0x00082eec                SpiRequest
+                0x00082fb0                SpiRelease
+                0x00083014                SpiReadByte
+                0x00083036                SpiReadData
+                0x0008306c                SpiQueryReceiveStatus
+                0x000830a0                SpiInitialize
+                0x000830dc                SpiRunActiveState
+                0x000830ec                SpiManualMode
+                0x00083148                SpiWriteByte
+                0x00083178                SpiWriteData
+                0x000831a0                SPI0_IrqHandler
+ .rodata.str1.4
+                0x00083290       0x33 firmware_common/drivers/sam3u_spi.c.1.o
+ *fill*         0x000832c3        0x1 
+ .text          0x000832c4      0x88c firmware_common/drivers/sam3u_ssp.c.1.o
+                0x000836d4                SspRequest
+                0x0008383c                SspRelease
+                0x000838b8                SspAssertCS
+                0x000838c8                SspDeAssertCS
+                0x000838d8                SspReadByte
+                0x000838fe                SspReadData
+                0x00083938                SspQueryReceiveStatus
+                0x00083970                SspInitialize
+                0x00083a04                SspRunActiveState
+                0x00083a14                SspManualMode
+                0x00083a80                SspWriteByte
+                0x00083ab8                SspWriteData
+                0x00083ae4                SSP0_IRQHandler
+                0x00083b08                USART1_IrqHandler
+                0x00083b2c                USART2_IrqHandler
+ .rodata.str1.4
+                0x00083b50       0x4c firmware_common/drivers/sam3u_ssp.c.1.o
+ .text          0x00083b9c      0x4b0 firmware_common/drivers/sam3u_uart.c.1.o
+                0x00083d28                UartRequest
+                0x00083e04                UartRelease
+                0x00083e78                UartInitialize
+                0x00083f04                UartRunActiveState
+                0x00083f74                UartWriteByte
+                0x00083fa4                UartWriteData
+                0x00083fcc                DBGU_IrqHandler
+                0x00083fec                USART0_IrqHandler
+                0x0008400c                UART1_IRQHandler
+                0x0008402c                UART2_IRQHandler
+ .rodata.str1.4
+                0x0008404c       0x1d firmware_common/drivers/sam3u_uart.c.1.o
+ *fill*         0x00084069        0x3 
+ .text          0x0008406c      0x100 firmware_common/drivers/timer.c.1.o
+                0x00084070                TimerSet
+                0x0008407c                TimerStart
+                0x0008408e                TimerStop
+                0x000840a0                TimerGetTime
+                0x000840ae                TimerAssignCallback
+                0x000840c0                TimerInitialize
+                0x0008412c                TimerRunActiveState
+                0x0008413c                TC1_IrqHandler
+ .rodata.str1.4
+                0x0008416c       0x15 firmware_common/drivers/timer.c.1.o
+ *fill*         0x00084181        0x3 
+ .text          0x00084184      0x1a0 firmware_common/drivers/utilities.c.1.o
+                0x00084184                IsTimeUp
+                0x000841b0                ASCIIHexCharToNum
+                0x000841e4                HexToASCIICharUpper
+                0x00084202                HexToASCIICharLower
+                0x00084220                NumberToAscii
+                0x00084298                SearchString
+ .text          0x00084324      0x1a8 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+                0x00084326                LcdCommand
+                0x0008435c                LcdMessage
+                0x0008438c                LcdClearChars
+                0x000843c4                LcdInitialize
+                0x000844bc                LcdRunActiveState
+ .rodata.str1.4
+                0x000844cc       0x1e firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ *fill*         0x000844ea        0x2 
+ .text          0x000844ec      0x7d8 firmware_common/application/debug.c.1.o
+                0x000844ec                DebugRxCallback
+                0x00084578                DebugPrintf
+                0x0008494c                DebugLineFeed
+                0x00084a08                DebugPrintNumber
+                0x00084af8                DebugScanf
+                0x00084b34                DebugSetPassthrough
+                0x00084b54                DebugClearPassthrough
+                0x00084b74                SystemStatusReport
+                0x00084bec                DebugInitialize
+                0x00084cb4                DebugRunActiveState
+ .rodata.str1.4
+                0x00084cc4      0x23d firmware_common/application/debug.c.1.o
+ *fill*         0x00084f01        0x3 
+ .rodata        0x00084f04        0x5 firmware_common/application/debug.c.1.o
+ *fill*         0x00084f09        0x3 
+ .text          0x00084f0c       0xdc firmware_common/application/main.c.1.o
+                0x00084f0c                main
+ .rodata        0x00084fe8       0x46 firmware_common/application/main.c.1.o
+                0x00084fe8                G_aau8AppShortNames
+ *fill*         0x0008502e        0x2 
+ .text          0x00085030      0x150 firmware_common/application/user_app1.c.1.o
+                0x00085160                UserApp1Initialize
+                0x00085170                UserApp1RunActiveState
+ .rodata.str1.4
+                0x00085180       0x53 firmware_common/application/user_app1.c.1.o
+ *fill*         0x000851d3        0x1 
+ .text          0x000851d4       0x24 firmware_common/application/user_app2.c.1.o
+                0x000851d6                UserApp2Initialize
+                0x000851e8                UserApp2RunActiveState
+ .text          0x000851f8       0x24 firmware_common/application/user_app3.c.1.o
+                0x000851fa                UserApp3Initialize
+                0x0008520c                UserApp3RunActiveState
+ .text          0x0008521c        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+ .text.malloc   0x0008521c       0x10 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+                0x0008521c                malloc
+ .text.free     0x0008522c       0x10 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+                0x0008522c                free
+ .text          0x0008523c        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .text.sbrk_aligned
+                0x0008523c       0x44 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x00085280      0x100 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x00085280                _malloc_r
+ .text          0x00085380        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .text.__malloc_lock
+                0x00085380        0xc /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x00085380                __malloc_lock
+ .text.__malloc_unlock
+                0x0008538c        0xc /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x0008538c                __malloc_unlock
+ .text          0x00085398        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .text.memset   0x00085398       0x10 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+                0x00085398                memset
+ .text          0x000853a8        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+ .text._reclaim_reent
+                0x000853a8       0xac /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+                0x000853a8                _reclaim_reent
+ .text          0x00085454        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+ .text          0x00085454        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .text._sbrk_r  0x00085454       0x20 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+                0x00085454                _sbrk_r
+ .text          0x00085474        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+ .text.__retarget_lock_init
+                0x00085474        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x00085474                __retarget_lock_init
+ .text.__retarget_lock_init_recursive
+                0x00085476        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x00085476                __retarget_lock_init_recursive
+ .text.__retarget_lock_close
+                0x00085478        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x00085478                __retarget_lock_close
+ .text.__retarget_lock_close_recursive
+                0x0008547a        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x0008547a                __retarget_lock_close_recursive
+ .text.__retarget_lock_acquire
+                0x0008547c        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x0008547c                __retarget_lock_acquire
+ .text.__retarget_lock_acquire_recursive
+                0x0008547e        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x0008547e                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_try_acquire
+                0x00085480        0x4 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x00085480                __retarget_lock_try_acquire
+ .text.__retarget_lock_try_acquire_recursive
+                0x00085484        0x4 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x00085484                __retarget_lock_try_acquire_recursive
+ .text.__retarget_lock_release
+                0x00085488        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x00085488                __retarget_lock_release
+ .text.__retarget_lock_release_recursive
+                0x0008548a        0x2 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x0008548a                __retarget_lock_release_recursive
+ .text          0x0008548c        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .text.memcpy   0x0008548c       0x1c /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+                0x0008548c                memcpy
+ .text          0x000854a8        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+ .text.strcpy   0x000854a8       0x10 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+                0x000854a8                strcpy
+ .text          0x000854b8        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+ .text._free_r  0x000854b8       0x90 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+                0x000854b8                _free_r
+
+.glue_7         0x00085548        0x0
+ .glue_7        0x00085548        0x0 linker stubs
+
+.glue_7t        0x00085548        0x0
+ .glue_7t       0x00085548        0x0 linker stubs
+
+.vfp11_veneer   0x00085548        0x0
+ .vfp11_veneer  0x00085548        0x0 linker stubs
+
+.v4_bx          0x00085548        0x0
+ .v4_bx         0x00085548        0x0 linker stubs
+
+.iplt           0x00085548        0x0
+ .iplt          0x00085548        0x0 firmware_common/bsp/board_startup_gcc.s.1.o
+
+.rel.dyn        0x00085548        0x0
+ .rel.iplt      0x00085548        0x0 firmware_common/bsp/board_startup_gcc.s.1.o
+
+.data           0x20000000      0x3b4 load address 0x00085548
+                0x20000000                        _data_start = ABSOLUTE (.)
+ *(.data*)
+ .data          0x20000000        0x0 firmware_common/cmsis/gcc_support.s.1.o
+ .data          0x20000000        0x0 firmware_common/bsp/board_startup_gcc.s.1.o
+ .data          0x20000000        0x0 firmware_common/bsp/kill_x_cycles.s.1.o
+ .data          0x20000000        0x0 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .data          0x20000000        0x4 firmware_common/bsp/sbrk.c.1.o
+ .data          0x20000004        0x0 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .data          0x20000004        0x0 firmware_common/drivers/adc12.c.1.o
+ .data          0x20000004      0x20a firmware_common/drivers/ant.c.1.o
+                0x20000004                G_au8AntMessageOpen
+                0x20000018                G_au8AntMessageClose
+                0x20000030                G_au8AntMessageUnassign
+                0x20000048                G_au8AntMessageUnhandled
+                0x20000070                G_au8AntMessageOk
+                0x20000078                G_au8AntMessageFail
+                0x200000e0                G_au8ANTGetVersion
+                0x20000110                G_au8AntMessageNoAnt
+                0x2000014c                G_au8AntMessageInit
+                0x20000164                G_au8AntMessageInitFail
+                0x20000184                G_au8AntAckDataMessage
+                0x20000190                G_au8AntBroadcastDataMessage
+                0x2000019c                G_au8AntLibConfig
+                0x200001a4                G_au8AntSetSearchTimeout
+                0x200001ac                G_au8AntSetChannelPower
+                0x200001b4                G_au8AntSetChannelRFFreq
+                0x200001bc                G_au8AntSetChannelPeriod
+                0x200001c4                G_au8AntSetChannelID
+                0x200001cc                G_au8AntAssignChannel
+                0x200001d4                G_au8AntSetNetworkKey
+                0x200001e0                G_au8AntMessageSetup
+                0x200001f8                G_au8AntMessageAssign
+ .data          0x2000020e        0x0 firmware_common/drivers/ant_api.c.1.o
+ .data          0x2000020e        0x0 firmware_common/drivers/buttons.c.1.o
+ .data          0x2000020e        0x0 firmware_common/drivers/exceptions.c.1.o
+ .data          0x2000020e        0x0 firmware_common/drivers/interrupts.c.1.o
+ .data          0x2000020e        0x0 firmware_common/drivers/leds.c.1.o
+ *fill*         0x2000020e        0x2 
+ .data          0x20000210        0x4 firmware_common/drivers/messaging.c.1.o
+ .data          0x20000214        0x0 firmware_common/drivers/sam3u_i2c.c.1.o
+ .data          0x20000214        0x0 firmware_common/drivers/sam3u_spi.c.1.o
+ .data          0x20000214        0x0 firmware_common/drivers/sam3u_ssp.c.1.o
+ .data          0x20000214        0x0 firmware_common/drivers/sam3u_uart.c.1.o
+ .data          0x20000214        0x0 firmware_common/drivers/timer.c.1.o
+ .data          0x20000214       0x1d firmware_common/drivers/utilities.c.1.o
+                0x20000214                G_au8UtilMessageOFF
+                0x2000021c                G_au8UtilMessageON
+                0x20000224                G_au8UtilMessageFAIL
+                0x2000022c                G_au8UtilMessageOK
+ *fill*         0x20000231        0x3 
+ .data          0x20000234       0x55 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ *fill*         0x20000289        0x3 
+ .data          0x2000028c       0xd7 firmware_common/application/debug.c.1.o
+                0x2000028c                Debug_au8Commands
+ .data          0x20000363        0x0 firmware_common/application/main.c.1.o
+ .data          0x20000363        0x0 firmware_common/application/user_app1.c.1.o
+ .data          0x20000363        0x0 firmware_common/application/user_app2.c.1.o
+ .data          0x20000363        0x0 firmware_common/application/user_app3.c.1.o
+ .data          0x20000363        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+ .data          0x20000363        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .data          0x20000363        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .data          0x20000363        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .data          0x20000363        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+ .data          0x20000363        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+ *fill*         0x20000363        0x1 
+ .data._impure_ptr
+                0x20000364        0x4 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+                0x20000364                _impure_ptr
+ .data._impure_data
+                0x20000368       0x4c /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+                0x20000368                _impure_data
+ .data          0x200003b4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .data          0x200003b4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+ .data          0x200003b4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .data          0x200003b4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+ .data          0x200003b4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+                0x200003b4                        _data_end = ABSOLUTE (.)
+                0x00085548                        _data_load = LOADADDR (.data)
+
+.igot.plt       0x200003b4        0x0 load address 0x000858fc
+ .igot.plt      0x200003b4        0x0 firmware_common/bsp/board_startup_gcc.s.1.o
+
+.bss            0x200003b4     0x1e24 load address 0x000858fc
+                0x200003b4                        _bss_start = ABSOLUTE (.)
+ *(.bss*)
+ .bss           0x200003b4        0x0 firmware_common/cmsis/gcc_support.s.1.o
+ .bss           0x200003b4        0x0 firmware_common/bsp/board_startup_gcc.s.1.o
+ .bss           0x200003b4        0x0 firmware_common/bsp/kill_x_cycles.s.1.o
+ .bss           0x200003b4        0x0 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .bss           0x200003b4        0x0 firmware_common/bsp/sbrk.c.1.o
+ .bss           0x200003b4        0x8 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .bss           0x200003bc       0x2c firmware_common/drivers/adc12.c.1.o
+                0x200003e4                G_u32Adc12Flags
+ .bss           0x200003e8      0x230 firmware_common/drivers/ant.c.1.o
+                0x20000500                G_u32AntFlags
+                0x2000051c                G_psAntApplicationMsgList
+                0x20000538                G_stAntMessageResponse
+                0x2000053c                G_asAntChannelConfiguration
+ .bss           0x20000618       0x28 firmware_common/drivers/ant_api.c.1.o
+                0x20000624                G_u32AntApiCurrentMessageTimeStamp
+                0x20000628                G_eAntApiCurrentMessageClass
+                0x2000062c                G_au8AntApiCurrentMessageBytes
+                0x20000634                G_sAntApiCurrentMessageExtData
+                0x2000063c                G_u32AntApiFlags
+ .bss           0x20000640       0x34 firmware_common/drivers/buttons.c.1.o
+ .bss           0x20000674        0x0 firmware_common/drivers/exceptions.c.1.o
+ .bss           0x20000674        0x0 firmware_common/drivers/interrupts.c.1.o
+ .bss           0x20000674       0x5c firmware_common/drivers/leds.c.1.o
+ .bss           0x200006d0     0x1514 firmware_common/drivers/messaging.c.1.o
+                0x200009dc                G_u32MessagingFlags
+ .bss           0x20001be4      0x224 firmware_common/drivers/sam3u_i2c.c.1.o
+ .bss           0x20001e08       0x38 firmware_common/drivers/sam3u_spi.c.1.o
+                0x20001e38                G_u32Spi0ApplicationFlags
+ .bss           0x20001e40       0xe0 firmware_common/drivers/sam3u_ssp.c.1.o
+                0x20001f08                G_u32Ssp0ApplicationFlags
+                0x20001f0c                G_u32Ssp1ApplicationFlags
+                0x20001f10                G_u32Ssp2ApplicationFlags
+ .bss           0x20001f20       0xb4 firmware_common/drivers/sam3u_uart.c.1.o
+ .bss           0x20001fd4       0x10 firmware_common/drivers/timer.c.1.o
+                0x20001fe0                G_u32TimerFlags
+ .bss           0x20001fe4        0x0 firmware_common/drivers/utilities.c.1.o
+ .bss           0x20001fe4        0xc firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .bss           0x20001ff0      0x1a5 firmware_common/application/debug.c.1.o
+                0x20002080                G_u32DebugFlags
+                0x20002084                G_u8DebugScanfCharCount
+                0x20002088                G_au8DebugScanfBuffer
+ *fill*         0x20002195        0x3 
+ .bss           0x20002198       0x10 firmware_common/application/main.c.1.o
+                0x20002198                G_u32SystemFlags
+                0x2000219c                G_u32ApplicationFlags
+                0x200021a0                G_u32SystemTime1s
+                0x200021a4                G_u32SystemTime1ms
+ .bss           0x200021a8        0xc firmware_common/application/user_app1.c.1.o
+                0x200021b0                G_u32UserApp1Flags
+ .bss           0x200021b4        0x8 firmware_common/application/user_app2.c.1.o
+                0x200021b8                G_u32UserApp2Flags
+ .bss           0x200021bc        0x8 firmware_common/application/user_app3.c.1.o
+                0x200021c0                G_u32UserApp3Flags
+ .bss           0x200021c4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+ .bss           0x200021c4        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x200021c4        0x4 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x200021c4                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x200021c8        0x4 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x200021c8                __malloc_free_list
+ .bss           0x200021cc        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .bss           0x200021cc        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .bss           0x200021cc        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+ .bss.errno     0x200021cc        0x4 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+                0x200021cc                errno
+ .bss           0x200021d0        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+ .bss           0x200021d0        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .bss           0x200021d0        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x200021d0        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d0                __lock___arc4random_mutex
+ .bss.__lock___dd_hash_mutex
+                0x200021d1        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d1                __lock___dd_hash_mutex
+ .bss.__lock___tz_mutex
+                0x200021d2        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d2                __lock___tz_mutex
+ .bss.__lock___env_recursive_mutex
+                0x200021d3        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d3                __lock___env_recursive_mutex
+ .bss.__lock___malloc_recursive_mutex
+                0x200021d4        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d4                __lock___malloc_recursive_mutex
+ .bss.__lock___at_quick_exit_mutex
+                0x200021d5        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d5                __lock___at_quick_exit_mutex
+ .bss.__lock___atexit_recursive_mutex
+                0x200021d6        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d6                __lock___atexit_recursive_mutex
+ .bss.__lock___sfp_recursive_mutex
+                0x200021d7        0x1 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x200021d7                __lock___sfp_recursive_mutex
+ .bss           0x200021d8        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .bss           0x200021d8        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+ .bss           0x200021d8        0x0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+ *(COMMON*)
+                0x200021d8                        _bss_end = ABSOLUTE (.)
+
+.stack          0x200021d8     0x1000 load address 0x000858fc
+                0x200021d8                        . = ALIGN (0x8)
+                0x200021d8                        _stack_limit = ABSOLUTE (.)
+                0x200031d8                        . = (. + _stack_size)
+ *fill*         0x200021d8     0x1000 
+                0x200031d8                        _stack_init = ABSOLUTE (.)
+
+.heap           0x20080000     0x4000
+                0x20080000                        . = ALIGN (0x8)
+                0x20080000                        _heap_start = ABSOLUTE (.)
+                0x20084000                        . = (. + _heap_size)
+ *fill*         0x20080000     0x4000 
+                0x20084000                        _heap_end = ABSOLUTE (.)
+OUTPUT(/Users/khadeejaabbas/Documents/GitHub/razor_sam3u2/build/firmware-ascii elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x29
+ .ARM.attributes
+                0x00000000       0x1b firmware_common/cmsis/gcc_support.s.1.o
+ .ARM.attributes
+                0x0000001b       0x1b firmware_common/bsp/board_startup_gcc.s.1.o
+ .ARM.attributes
+                0x00000036       0x1b firmware_common/bsp/kill_x_cycles.s.1.o
+ .ARM.attributes
+                0x00000051       0x2d firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .ARM.attributes
+                0x0000007e       0x2d firmware_common/bsp/sbrk.c.1.o
+ .ARM.attributes
+                0x000000ab       0x2d firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .ARM.attributes
+                0x000000d8       0x2d firmware_common/drivers/adc12.c.1.o
+ .ARM.attributes
+                0x00000105       0x2d firmware_common/drivers/ant.c.1.o
+ .ARM.attributes
+                0x00000132       0x2d firmware_common/drivers/ant_api.c.1.o
+ .ARM.attributes
+                0x0000015f       0x2d firmware_common/drivers/buttons.c.1.o
+ .ARM.attributes
+                0x0000018c       0x2d firmware_common/drivers/exceptions.c.1.o
+ .ARM.attributes
+                0x000001b9       0x2d firmware_common/drivers/interrupts.c.1.o
+ .ARM.attributes
+                0x000001e6       0x2d firmware_common/drivers/leds.c.1.o
+ .ARM.attributes
+                0x00000213       0x2d firmware_common/drivers/messaging.c.1.o
+ .ARM.attributes
+                0x00000240       0x2d firmware_common/drivers/sam3u_i2c.c.1.o
+ .ARM.attributes
+                0x0000026d       0x2d firmware_common/drivers/sam3u_spi.c.1.o
+ .ARM.attributes
+                0x0000029a       0x2d firmware_common/drivers/sam3u_ssp.c.1.o
+ .ARM.attributes
+                0x000002c7       0x2d firmware_common/drivers/sam3u_uart.c.1.o
+ .ARM.attributes
+                0x000002f4       0x2d firmware_common/drivers/timer.c.1.o
+ .ARM.attributes
+                0x00000321       0x2d firmware_common/drivers/utilities.c.1.o
+ .ARM.attributes
+                0x0000034e       0x2d firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .ARM.attributes
+                0x0000037b       0x2d firmware_common/application/debug.c.1.o
+ .ARM.attributes
+                0x000003a8       0x2d firmware_common/application/main.c.1.o
+ .ARM.attributes
+                0x000003d5       0x2d firmware_common/application/user_app1.c.1.o
+ .ARM.attributes
+                0x00000402       0x2d firmware_common/application/user_app2.c.1.o
+ .ARM.attributes
+                0x0000042f       0x2d firmware_common/application/user_app3.c.1.o
+ .ARM.attributes
+                0x0000045c       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+ .ARM.attributes
+                0x00000489       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .ARM.attributes
+                0x000004b6       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .ARM.attributes
+                0x000004e3       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000510       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+ .ARM.attributes
+                0x0000053d       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+ .ARM.attributes
+                0x0000056a       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .ARM.attributes
+                0x00000597       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+ .ARM.attributes
+                0x000005c4       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000005f1       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+ .ARM.attributes
+                0x0000061e       0x2d /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 firmware_common/bsp/board_cstartup_gcc.c.1.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045       0x46 firmware_common/bsp/sbrk.c.1.o
+ .comment       0x00000045       0x46 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/adc12.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/ant.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/ant_api.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/buttons.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/exceptions.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/interrupts.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/leds.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/messaging.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/sam3u_i2c.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/sam3u_spi.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/sam3u_ssp.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/sam3u_uart.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/timer.c.1.o
+ .comment       0x00000045       0x46 firmware_common/drivers/utilities.c.1.o
+ .comment       0x00000045       0x46 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .comment       0x00000045       0x46 firmware_common/application/debug.c.1.o
+ .comment       0x00000045       0x46 firmware_common/application/main.c.1.o
+ .comment       0x00000045       0x46 firmware_common/application/user_app1.c.1.o
+ .comment       0x00000045       0x46 firmware_common/application/user_app2.c.1.o
+ .comment       0x00000045       0x46 firmware_common/application/user_app3.c.1.o
+
+.debug_info     0x00000000     0xf7b5
+ .debug_info    0x00000000      0x8e5 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .debug_info    0x000008e5      0x106 firmware_common/bsp/sbrk.c.1.o
+ .debug_info    0x000009eb     0x1387 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .debug_info    0x00001d72      0x77c firmware_common/drivers/adc12.c.1.o
+ .debug_info    0x000024ee     0x1fcb firmware_common/drivers/ant.c.1.o
+ .debug_info    0x000044b9      0xb89 firmware_common/drivers/ant_api.c.1.o
+ .debug_info    0x00005042      0xbe9 firmware_common/drivers/buttons.c.1.o
+ .debug_info    0x00005c2b      0x31c firmware_common/drivers/exceptions.c.1.o
+ .debug_info    0x00005f47      0xe52 firmware_common/drivers/interrupts.c.1.o
+ .debug_info    0x00006d99      0xade firmware_common/drivers/leds.c.1.o
+ .debug_info    0x00007877      0x59d firmware_common/drivers/messaging.c.1.o
+ .debug_info    0x00007e14      0xe1e firmware_common/drivers/sam3u_i2c.c.1.o
+ .debug_info    0x00008c32     0x1217 firmware_common/drivers/sam3u_spi.c.1.o
+ .debug_info    0x00009e49     0x15ae firmware_common/drivers/sam3u_ssp.c.1.o
+ .debug_info    0x0000b3f7     0x10b9 firmware_common/drivers/sam3u_uart.c.1.o
+ .debug_info    0x0000c4b0      0x7b7 firmware_common/drivers/timer.c.1.o
+ .debug_info    0x0000cc67      0x3c5 firmware_common/drivers/utilities.c.1.o
+ .debug_info    0x0000d02c      0x90e firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .debug_info    0x0000d93a     0x114d firmware_common/application/debug.c.1.o
+ .debug_info    0x0000ea87      0x7cc firmware_common/application/main.c.1.o
+ .debug_info    0x0000f253      0x31c firmware_common/application/user_app1.c.1.o
+ .debug_info    0x0000f56f      0x123 firmware_common/application/user_app2.c.1.o
+ .debug_info    0x0000f692      0x123 firmware_common/application/user_app3.c.1.o
+
+.debug_abbrev   0x00000000     0x366f
+ .debug_abbrev  0x00000000      0x201 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .debug_abbrev  0x00000201       0xb1 firmware_common/bsp/sbrk.c.1.o
+ .debug_abbrev  0x000002b2      0x278 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .debug_abbrev  0x0000052a      0x333 firmware_common/drivers/adc12.c.1.o
+ .debug_abbrev  0x0000085d      0x32e firmware_common/drivers/ant.c.1.o
+ .debug_abbrev  0x00000b8b      0x281 firmware_common/drivers/ant_api.c.1.o
+ .debug_abbrev  0x00000e0c      0x31e firmware_common/drivers/buttons.c.1.o
+ .debug_abbrev  0x0000112a       0x5f firmware_common/drivers/exceptions.c.1.o
+ .debug_abbrev  0x00001189      0x2b1 firmware_common/drivers/interrupts.c.1.o
+ .debug_abbrev  0x0000143a      0x2cc firmware_common/drivers/leds.c.1.o
+ .debug_abbrev  0x00001706      0x272 firmware_common/drivers/messaging.c.1.o
+ .debug_abbrev  0x00001978      0x3a5 firmware_common/drivers/sam3u_i2c.c.1.o
+ .debug_abbrev  0x00001d1d      0x3b8 firmware_common/drivers/sam3u_spi.c.1.o
+ .debug_abbrev  0x000020d5      0x3c2 firmware_common/drivers/sam3u_ssp.c.1.o
+ .debug_abbrev  0x00002497      0x3b8 firmware_common/drivers/sam3u_uart.c.1.o
+ .debug_abbrev  0x0000284f      0x2dd firmware_common/drivers/timer.c.1.o
+ .debug_abbrev  0x00002b2c      0x1c8 firmware_common/drivers/utilities.c.1.o
+ .debug_abbrev  0x00002cf4      0x200 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .debug_abbrev  0x00002ef4      0x366 firmware_common/application/debug.c.1.o
+ .debug_abbrev  0x0000325a      0x118 firmware_common/application/main.c.1.o
+ .debug_abbrev  0x00003372      0x15f firmware_common/application/user_app1.c.1.o
+ .debug_abbrev  0x000034d1       0xcf firmware_common/application/user_app2.c.1.o
+ .debug_abbrev  0x000035a0       0xcf firmware_common/application/user_app3.c.1.o
+
+.debug_aranges  0x00000000      0x2e0
+ .debug_aranges
+                0x00000000       0x20 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .debug_aranges
+                0x00000020       0x20 firmware_common/bsp/sbrk.c.1.o
+ .debug_aranges
+                0x00000040       0x20 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .debug_aranges
+                0x00000060       0x20 firmware_common/drivers/adc12.c.1.o
+ .debug_aranges
+                0x00000080       0x20 firmware_common/drivers/ant.c.1.o
+ .debug_aranges
+                0x000000a0       0x20 firmware_common/drivers/ant_api.c.1.o
+ .debug_aranges
+                0x000000c0       0x20 firmware_common/drivers/buttons.c.1.o
+ .debug_aranges
+                0x000000e0       0x20 firmware_common/drivers/exceptions.c.1.o
+ .debug_aranges
+                0x00000100       0x20 firmware_common/drivers/interrupts.c.1.o
+ .debug_aranges
+                0x00000120       0x20 firmware_common/drivers/leds.c.1.o
+ .debug_aranges
+                0x00000140       0x20 firmware_common/drivers/messaging.c.1.o
+ .debug_aranges
+                0x00000160       0x20 firmware_common/drivers/sam3u_i2c.c.1.o
+ .debug_aranges
+                0x00000180       0x20 firmware_common/drivers/sam3u_spi.c.1.o
+ .debug_aranges
+                0x000001a0       0x20 firmware_common/drivers/sam3u_ssp.c.1.o
+ .debug_aranges
+                0x000001c0       0x20 firmware_common/drivers/sam3u_uart.c.1.o
+ .debug_aranges
+                0x000001e0       0x20 firmware_common/drivers/timer.c.1.o
+ .debug_aranges
+                0x00000200       0x20 firmware_common/drivers/utilities.c.1.o
+ .debug_aranges
+                0x00000220       0x20 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .debug_aranges
+                0x00000240       0x20 firmware_common/application/debug.c.1.o
+ .debug_aranges
+                0x00000260       0x20 firmware_common/application/main.c.1.o
+ .debug_aranges
+                0x00000280       0x20 firmware_common/application/user_app1.c.1.o
+ .debug_aranges
+                0x000002a0       0x20 firmware_common/application/user_app2.c.1.o
+ .debug_aranges
+                0x000002c0       0x20 firmware_common/application/user_app3.c.1.o
+
+.debug_line     0x00000000     0x7f95
+ .debug_line    0x00000000      0x2d5 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .debug_line    0x000002d5      0x155 firmware_common/bsp/sbrk.c.1.o
+ .debug_line    0x0000042a      0x4b8 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .debug_line    0x000008e2      0x3a1 firmware_common/drivers/adc12.c.1.o
+ .debug_line    0x00000c83     0x133b firmware_common/drivers/ant.c.1.o
+ .debug_line    0x00001fbe      0x73f firmware_common/drivers/ant_api.c.1.o
+ .debug_line    0x000026fd      0x539 firmware_common/drivers/buttons.c.1.o
+ .debug_line    0x00002c36      0x415 firmware_common/drivers/exceptions.c.1.o
+ .debug_line    0x0000304b      0x3cf firmware_common/drivers/interrupts.c.1.o
+ .debug_line    0x0000341a      0x46e firmware_common/drivers/leds.c.1.o
+ .debug_line    0x00003888      0x4e2 firmware_common/drivers/messaging.c.1.o
+ .debug_line    0x00003d6a      0x920 firmware_common/drivers/sam3u_i2c.c.1.o
+ .debug_line    0x0000468a      0x973 firmware_common/drivers/sam3u_spi.c.1.o
+ .debug_line    0x00004ffd      0xea8 firmware_common/drivers/sam3u_ssp.c.1.o
+ .debug_line    0x00005ea5      0x82c firmware_common/drivers/sam3u_uart.c.1.o
+ .debug_line    0x000066d1      0x311 firmware_common/drivers/timer.c.1.o
+ .debug_line    0x000069e2      0x336 firmware_common/drivers/utilities.c.1.o
+ .debug_line    0x00006d18      0x273 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .debug_line    0x00006f8b      0xa83 firmware_common/application/debug.c.1.o
+ .debug_line    0x00007a0e      0x27c firmware_common/application/main.c.1.o
+ .debug_line    0x00007c8a      0x1cf firmware_common/application/user_app1.c.1.o
+ .debug_line    0x00007e59       0x9e firmware_common/application/user_app2.c.1.o
+ .debug_line    0x00007ef7       0x9e firmware_common/application/user_app3.c.1.o
+
+.debug_str      0x00000000     0x4a92
+ .debug_str     0x00000000      0x783 firmware_common/bsp/board_cstartup_gcc.c.1.o
+                                0x816 (size before relaxing)
+ .debug_str     0x00000783       0x63 firmware_common/bsp/sbrk.c.1.o
+                                0x1d6 (size before relaxing)
+ .debug_str     0x000007e6      0xa79 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+                                0xed0 (size before relaxing)
+ .debug_str     0x0000125f      0x4b0 firmware_common/drivers/adc12.c.1.o
+                                0x6ab (size before relaxing)
+ .debug_str     0x0000170f      0xfd0 firmware_common/drivers/ant.c.1.o
+                               0x14a3 (size before relaxing)
+ .debug_str     0x000026df      0x35d firmware_common/drivers/ant_api.c.1.o
+                                0x99e (size before relaxing)
+ .debug_str     0x00002a3c      0x208 firmware_common/drivers/buttons.c.1.o
+                                0x95d (size before relaxing)
+ .debug_str     0x00002c44       0x49 firmware_common/drivers/exceptions.c.1.o
+                                0x414 (size before relaxing)
+ .debug_str     0x00002c8d       0xf3 firmware_common/drivers/interrupts.c.1.o
+                                0xa3b (size before relaxing)
+ .debug_str     0x00002d80      0x2c6 firmware_common/drivers/leds.c.1.o
+                                0x813 (size before relaxing)
+ .debug_str     0x00003046      0x21f firmware_common/drivers/messaging.c.1.o
+                                0x4c0 (size before relaxing)
+ .debug_str     0x00003265      0x3a8 firmware_common/drivers/sam3u_i2c.c.1.o
+                                0xa85 (size before relaxing)
+ .debug_str     0x0000360d      0x2d8 firmware_common/drivers/sam3u_spi.c.1.o
+                                0xceb (size before relaxing)
+ .debug_str     0x000038e5      0x2f3 firmware_common/drivers/sam3u_ssp.c.1.o
+                                0xf77 (size before relaxing)
+ .debug_str     0x00003bd8      0x351 firmware_common/drivers/sam3u_uart.c.1.o
+                                0xc3f (size before relaxing)
+ .debug_str     0x00003f29      0x24e firmware_common/drivers/timer.c.1.o
+                                0x6a2 (size before relaxing)
+ .debug_str     0x00004177      0x17f firmware_common/drivers/utilities.c.1.o
+                                0x34a (size before relaxing)
+ .debug_str     0x000042f6       0xf4 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+                                0x601 (size before relaxing)
+ .debug_str     0x000043ea      0x475 firmware_common/application/debug.c.1.o
+                                0xa9b (size before relaxing)
+ .debug_str     0x0000485f       0xa4 firmware_common/application/main.c.1.o
+                                0x77b (size before relaxing)
+ .debug_str     0x00004903       0xc3 firmware_common/application/user_app1.c.1.o
+                                0x2e3 (size before relaxing)
+ .debug_str     0x000049c6       0x66 firmware_common/application/user_app2.c.1.o
+                                0x219 (size before relaxing)
+ .debug_str     0x00004a2c       0x66 firmware_common/application/user_app3.c.1.o
+                                0x219 (size before relaxing)
+
+.debug_frame    0x00000000     0x1808
+ .debug_frame   0x00000000       0x28 firmware_common/bsp/board_cstartup_gcc.c.1.o
+ .debug_frame   0x00000028       0x20 firmware_common/bsp/sbrk.c.1.o
+ .debug_frame   0x00000048       0xb8 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .debug_frame   0x00000100       0xac firmware_common/drivers/adc12.c.1.o
+ .debug_frame   0x000001ac      0x284 firmware_common/drivers/ant.c.1.o
+ .debug_frame   0x00000430      0x17c firmware_common/drivers/ant_api.c.1.o
+ .debug_frame   0x000005ac       0xc8 firmware_common/drivers/buttons.c.1.o
+ .debug_frame   0x00000674      0x290 firmware_common/drivers/exceptions.c.1.o
+ .debug_frame   0x00000904       0x80 firmware_common/drivers/interrupts.c.1.o
+ .debug_frame   0x00000984       0xc0 firmware_common/drivers/leds.c.1.o
+ .debug_frame   0x00000a44       0xb0 firmware_common/drivers/messaging.c.1.o
+ .debug_frame   0x00000af4      0x15c firmware_common/drivers/sam3u_i2c.c.1.o
+ .debug_frame   0x00000c50      0x148 firmware_common/drivers/sam3u_spi.c.1.o
+ .debug_frame   0x00000d98      0x1a8 firmware_common/drivers/sam3u_ssp.c.1.o
+ .debug_frame   0x00000f40      0x158 firmware_common/drivers/sam3u_uart.c.1.o
+ .debug_frame   0x00001098       0xc8 firmware_common/drivers/timer.c.1.o
+ .debug_frame   0x00001160       0x80 firmware_common/drivers/utilities.c.1.o
+ .debug_frame   0x000011e0       0xa0 firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .debug_frame   0x00001280      0x214 firmware_common/application/debug.c.1.o
+ .debug_frame   0x00001494       0x28 firmware_common/application/main.c.1.o
+ .debug_frame   0x000014bc       0x58 firmware_common/application/user_app1.c.1.o
+ .debug_frame   0x00001514       0x48 firmware_common/application/user_app2.c.1.o
+ .debug_frame   0x0000155c       0x48 firmware_common/application/user_app3.c.1.o
+ .debug_frame   0x000015a4       0x30 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+ .debug_frame   0x000015d4       0x50 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00001624       0x30 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00001654       0x20 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_frame   0x00001674       0x38 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+ .debug_frame   0x000016ac       0x2c /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x000016d8       0xb0 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+ .debug_frame   0x00001788       0x28 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x000017b0       0x20 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcpy.o)
+ .debug_frame   0x000017d0       0x38 /Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+
+.debug_loclists
+                0x00000000     0x2592
+ .debug_loclists
+                0x00000000       0x3e firmware_common/bsp/sbrk.c.1.o
+ .debug_loclists
+                0x0000003e       0x71 firmware_ascii/bsp/eief1-pcb-01.c.1.o
+ .debug_loclists
+                0x000000af       0xf3 firmware_common/drivers/adc12.c.1.o
+ .debug_loclists
+                0x000001a2      0x7e2 firmware_common/drivers/ant.c.1.o
+ .debug_loclists
+                0x00000984      0x1ab firmware_common/drivers/ant_api.c.1.o
+ .debug_loclists
+                0x00000b2f      0x1c0 firmware_common/drivers/buttons.c.1.o
+ .debug_loclists
+                0x00000cef       0xdd firmware_common/drivers/interrupts.c.1.o
+ .debug_loclists
+                0x00000dcc      0x140 firmware_common/drivers/leds.c.1.o
+ .debug_loclists
+                0x00000f0c      0x262 firmware_common/drivers/messaging.c.1.o
+ .debug_loclists
+                0x0000116e      0x203 firmware_common/drivers/sam3u_i2c.c.1.o
+ .debug_loclists
+                0x00001371      0x381 firmware_common/drivers/sam3u_spi.c.1.o
+ .debug_loclists
+                0x000016f2      0x460 firmware_common/drivers/sam3u_ssp.c.1.o
+ .debug_loclists
+                0x00001b52      0x257 firmware_common/drivers/sam3u_uart.c.1.o
+ .debug_loclists
+                0x00001da9       0xc4 firmware_common/drivers/timer.c.1.o
+ .debug_loclists
+                0x00001e6d      0x2ea firmware_common/drivers/utilities.c.1.o
+ .debug_loclists
+                0x00002157       0xaf firmware_ascii/drivers/lcd_nhd-c0220biz.c.1.o
+ .debug_loclists
+                0x00002206      0x38c firmware_common/application/debug.c.1.o
+
+.debug_rnglists
+                0x00000000      0x10a
+ .debug_rnglists
+                0x00000000       0x13 firmware_common/drivers/adc12.c.1.o
+ .debug_rnglists
+                0x00000013       0x43 firmware_common/drivers/ant.c.1.o
+ .debug_rnglists
+                0x00000056       0x17 firmware_common/drivers/ant_api.c.1.o
+ .debug_rnglists
+                0x0000006d       0x1c firmware_common/drivers/leds.c.1.o
+ .debug_rnglists
+                0x00000089       0x27 firmware_common/drivers/messaging.c.1.o
+ .debug_rnglists
+                0x000000b0       0x17 firmware_common/drivers/utilities.c.1.o
+ .debug_rnglists
+                0x000000c7       0x43 firmware_common/application/debug.c.1.o
