@@ -92,6 +92,19 @@ Promises:
 */
 void UserApp1Initialize(void)
 {
+  u8 au8arrow[] = ">>------>        @(_)@";
+  u8 au8Ohno[] = "       Oh no...";
+  u8 u8Counter = 0;
+  LcdMessage(LCD_CLEAR_CMD);
+  LcdMessage(LINE1_START_ADDR, au8arrow);
+  LcdMessage(LINE2_START_ADDR, au8Ohno);
+
+  if (u8Counter & 0x01)
+  {
+  LcdMessage(LCD_CLEAR_CMD);
+  LcdMessage(LINE1_START_ADDR, au8arrow);
+  LcdMessage(LINE2_START_ADDR, au8Ohno);
+  }
   /* If good initialization, set state to Idle */
   if( 1 )
   {
