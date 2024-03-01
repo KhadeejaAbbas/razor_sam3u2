@@ -96,6 +96,11 @@ Promises:
 
 void UserApp1Initialize(void)
 {
+
+
+
+
+
    /*khadeeja :) wrote the below code*/
 
     /* PART 4 */
@@ -243,7 +248,13 @@ static void UserApp1SM_Idle(void)
       
       if(u8Counter & 0x01)
       {
-        LedOn(RED);
+          u8 au8arrow[] = ">>------>         @(_)@";
+          u8 au8Message[] = "             Oh no...";
+  
+  
+          LcdMessage(LCD_CLEAR_CMD);
+          LcdMessage(LINE1_START_ADDR, au8arrow);
+          LcdMessage(LINE2_START_ADDR, au8Message);
       }
       else
       {
