@@ -52,6 +52,7 @@ Promises:
 */
 int main(void)
 {
+  
   G_u32SystemFlags |= _SYSTEM_INITIALIZING;
 
   /* Low level initialization */
