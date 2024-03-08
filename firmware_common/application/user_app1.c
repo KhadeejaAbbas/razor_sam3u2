@@ -60,12 +60,21 @@ Global variable definitions with scope limited to this local application.
 Variable names shall start with "UserApp1_<type>" and be declared as static.
 ***********************************************************************************************************************/
 static fnCode_type UserApp1_pfStateMachine;               /*!< @brief The state machine function pointer */
+static u8 title[] = "  Milo the monkey!";
+static u16 u16WaitCount;
+static u8 u16DontClickTooSoon;
+static u8 start[] = "Can you handle Milo?";
+
 //static u32 UserApp1_u32Timeout;                           /*!< @brief Timeout counter used across states */
+
 
 
 /**********************************************************************************************************************
 Function Definitions
 **********************************************************************************************************************/
+
+static void UserApp1SM_Title(void);
+static void UserApp1SM_ChooseGame(void);
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*! @publicsection */                                                                                            
@@ -92,10 +101,19 @@ Promises:
 */
 void UserApp1Initialize(void)
 {
+
+
+    u16WaitCount = 0;
+    u16DontClickTooSoon = 0;
+    LcdCommand(LCD_CLEAR_CMD);
+    LcdMessage(LINE1_START_ADDR, title);
+
+          // LcdMessage(LINE2_START_ADDR, start);
+          // LcdMessage(LINE2_START_ADDR, au8Message);
   /* If good initialization, set state to Idle */
   if( 1 )
   {
-    UserApp1_pfStateMachine = UserApp1SM_Idle;
+    UserApp1_pfStateMachine = UserApp1SM_Title;
   }
   else
   {
@@ -137,10 +155,62 @@ void UserApp1RunActiveState(void)
 State Machine Function Definitions
 **********************************************************************************************************************/
 /*-------------------------------------------------------------------------------------------------------------------*/
+static void UserApp1SM_Title(void){
+  // LedOn(GREEN);
+  u16WaitCount++;
+
+  if (u16WaitCount > 1000){ //change this to 5000 instead of 1000
+    // LedOff(GREEN);
+    // LedOn(RED);
+    LcdCommand(LCD_CLEAR_CMD);
+    LcdMessage(LINE1_START_ADDR, start);
+    LcdMessage(LINE2_START_ADDR + 5, "Yes");
+    LcdMessage(LINE2_START_ADDR + 13, "No");
+      UserApp1_pfStateMachine = UserApp1SM_ChooseGame;
+      }
+}
+
+static void UserApp1SM_ChooseGame(void){
+    u16DontClickTooSoon++;
+    if (u16DontClickTooSoon > 250){
+        UserApp1_pfStateMachine = UserApp1SM_Idle;
+    }
+
+}
 /* What does this state do? */
 static void UserApp1SM_Idle(void)
 {
+
+    if((WasButtonPressed(BUTTON1) | WasButtonPressed(BUTTON0)))
+    {
+      int flag = 1;
+      ButtonAcknowledge(BUTTON0);
+      ButtonAcknowledge(BUTTON1);
+
+      LedOn(PURPLE); // now what  u have to do is create a new .c and .h file for the game screen with MILO! i created a file called 'homeScreen'
+      LcdCommand(LCD_CLEAR_CMD);
+      while(flag==1){
+              LcdMessage(LINE1_START_ADDR, "    Aww too bad...");
+
+      }
+
+
     
+    }
+    else if((WasButtonPressed(BUTTON2) | WasButtonPressed(BUTTON3))){
+      ButtonAcknowledge(BUTTON3);
+      ButtonAcknowledge(BUTTON2);
+      LedOn(WHITE);
+      LedOn(RED);
+      LcdCommand(LCD_CLEAR_CMD);
+
+      LcdMessage(LINE1_START_ADDR, "    Aww too bad...");
+      LcdMessage(LINE2_START_ADDR + 9, ":(");
+
+
+    }
+
+
 } /* end UserApp1SM_Idle() */
      
 

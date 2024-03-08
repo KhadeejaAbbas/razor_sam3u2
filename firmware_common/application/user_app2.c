@@ -142,7 +142,77 @@ State Machine Function Definitions
 /* What does this state do? */
 static void UserApp2SM_Idle(void)
 {
+  /*
+    static u16 u16BlinkCount = 0;
+    static u8 u8Counter = 0;
+    static u8 u8ColorIndex = 0;
     
+    u16BlinkCount++;
+    if(u16BlinkCount == 250)
+    {
+      u16BlinkCount = 0;
+
+      /* Update the counter and roll at 16 */ /*
+      u8Counter++;
+      if(u8Counter == 16)
+      {
+        u8Counter = 0;
+      }
+      /* Manage the backlight color */ /*
+      u8ColorIndex++;
+      if(u8ColorIndex == 4)
+      {
+        u8ColorIndex = 0;
+      }
+    
+    //the blinking includes turning off and on the led
+    /* END OF PART 4 */ /*
+    /* PART 5 */ /*
+      /* Parse the current count to set the LEDs.  RED is bit 0, ORANGE is bit 1, YELLOW is bit 2, Green is bit 3. */ /*
+      
+      if(u8Counter & 0x01)
+      {
+          u8 au8arrow[] = ">>------>         @(_)@";
+          u8 au8Message[] = "             Oh no...";
+  
+  
+          // LcdMessage(LCD_CLEAR_CMD);
+          LcdMessage(LINE1_START_ADDR, au8arrow);
+          LcdMessage(LINE2_START_ADDR, au8Message);
+      }
+      else
+      {
+        LedOff(RED);
+      }
+
+      if(u8Counter & 0x02)
+      {
+        LedOn(ORANGE);
+      }
+      else
+      {
+        LedOff(ORANGE);
+      }
+
+      if(u8Counter & 0x04)
+      {
+        LedOn(YELLOW);
+      }
+      else
+      {
+        LedOff(YELLOW);
+      }
+
+      if(u8Counter & 0x08)
+      {
+        LedOn(GREEN);
+      }
+      else
+      {
+        LedOff(GREEN);
+      }
+    }
+*/
 } /* end UserApp2SM_Idle() */
      
 
