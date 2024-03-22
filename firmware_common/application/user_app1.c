@@ -63,6 +63,8 @@ static fnCode_type UserApp1_pfStateMachine;               /*!< @brief The state 
 static u8 title[] = "Milo the monkey!";
 static u16 u16WaitCount;
 static u16 u16WaitCount2;
+static u16 u16WaitCount3;
+static u16 u16WaitCount4;
 
 static u16 u16Counter;
 static u16 u16Blinking;
@@ -71,6 +73,13 @@ static u8 u8Awake;
 static u8 u16DontClickTooSoon;
 static u8 start[] = "Can you handle Milo?";
 static u8 flag;
+static u8 miloAwake;
+static u8 eating;
+static u8 fish1;
+static u8 ate;
+static u8 win;
+
+
 // static int randomBit;
 
 //static u32 UserApp1_u32Timeout;                           /*!< @brief Timeout counter used across states */
@@ -113,14 +122,23 @@ void UserApp1Initialize(void)
 
     u16WaitCount = 0;
     u16WaitCount2 = 0;
+    u16WaitCount3 = 0;
+    u16WaitCount4 = 0;
 
     u16DontClickTooSoon = 0;
     u16Counter = 0;
 
     flag = 0;
+    miloAwake = 0;
+    eating = 0;
+    fish1 = 0;
+    ate = 0;
+    win = 0;
+
     u16Blinking = 0;
+
     LcdCommand(LCD_CLEAR_CMD);
-    LcdMessage(LINE1_START_ADDR+4, title);
+    LcdMessage(LINE1_START_ADDR+3, title);
 
   /* If good initialization, set state to Idle */
   if( 1 )
@@ -173,40 +191,105 @@ static void UserApp1SM_Title(void){
   if (u16WaitCount > 1000){ //change this to 5000 instead of 1000
 
     LcdCommand(LCD_CLEAR_CMD);
-    LcdMessage(LINE1_START_ADDR+1, start);
+    LcdMessage(LINE1_START_ADDR, start);
     LcdMessage(LINE2_START_ADDR + 6, "Yes");
     LcdMessage(LINE2_START_ADDR + 13, "No");
       UserApp1_pfStateMachine = UserApp1SM_Idle;
       }
 }
 
+static void UserApp1SM_WaitingScreenG(void){
+  u16WaitCount3++;
+  if (u16WaitCount3 > 2500){ //change this to 5000 instead of 1000
+    LcdCommand(LCD_CLEAR_CMD);
+    char mouth = 0xDB;
+    char value2 = 0xF4;
+    char value = 0xF3;
+    eating = 1;
+
+
+    if (ate == 1){
+        LcdMessage(LINE1_START_ADDR+7, "-   -   ( ");
+        LcdMessage(LINE2_START_ADDR+6, "(@ _ @)  )"); 
+        win = 1;
+      
+    }
+    else if (ate == 0) {
+      LcdMessage(LINE1_START_ADDR+7, &value);
+      LcdMessage(LINE1_START_ADDR+11, &value2);
+      LcdMessage(LINE1_START_ADDR+12, "   ( ");
+      LcdMessage(LINE2_START_ADDR, "      (@ _ @)  )"); 
+    }
+    
+    if (fish1 == 0){
+      LcdMessage(LINE1_START_ADDR, "><>");
+    }
+    else if (fish1 == 1 && ate == 0){
+
+      LcdMessage(LINE2_START_ADDR, "!     (@ "); 
+      LcdMessage(LINE2_START_ADDR+9, &mouth);
+
+      LcdMessage(LINE2_START_ADDR+10, " @)  )"); 
+      ate = 1;
+
+    }
+    UserApp1_pfStateMachine = UserApp1SM_Idle;
+  }  
+}
+
+
+
+static void UserApp1SM_GameScreen(void){
+    LcdCommand(LCD_CLEAR_CMD);
+    LcdMessage(LINE1_START_ADDR+3, "Feed Angry Milo!");
+    LcdMessage(LINE2_START_ADDR + 9, "><>");
+    LedOn(BLUE);
+    UserApp1_pfStateMachine = UserApp1SM_WaitingScreenG;
+}
+
 static void UserApp1SM_WaitingScreenP(void){
   u16WaitCount2++;
-  if (u16WaitCount2 > 3000){ //change this to 5000 instead of 1000
+  if (u16WaitCount2 > 2500){ //change this to 5000 instead of 1000
 
     u16Counter++;
     u16Blinking++;
-    if ((u16Blinking >=16) & (u8Awake < 2)){
-      u16Blinking = 0;
-    }
     LcdCommand(LCD_CLEAR_CMD);
-              
-    LcdMessage(LINE1_START_ADDR+7, "-   -   ( ");
-    LcdMessage(LINE2_START_ADDR+6, "(- _ -)  )");
-        if(u16Blinking > 14){  
-              u8Awake++;
-              LcdMessage(LINE2_START_ADDR+6, "(@ _ @)  )"); 
-        }
+    if (u8Awake < 3){
+      LcdMessage(LINE1_START_ADDR+7, "-   -   ( ");
+      LcdMessage(LINE2_START_ADDR+6, "(- _ -)  )");
+      if ((u16Blinking >=5) & (u8Awake < 3)){
+          u16Blinking = 0;
+      }              
 
+          if(u16Blinking > 3){  
+                u8Awake++;
+                LcdMessage(LINE2_START_ADDR+6, "(@ _ @)  )"); 
+          }
+
+    }
+    else {
+        char value2 = 0xF4;
+        char value = 0xF3;
+
+        LcdMessage(LINE1_START_ADDR+7, &value);
+        LcdMessage(LINE1_START_ADDR+11, &value2);
+        LcdMessage(LINE1_START_ADDR+12, "   ( ");
+        LcdMessage(LINE2_START_ADDR, "!     (@ _ @)  )"); 
+        miloAwake = 1;
+        // UserApp1_pfStateMachine = UserApp1SM_GameScreen;
+
+    }
     UserApp1_pfStateMachine = UserApp1SM_Idle;
+
+
   }  
 }
 
 
 static void UserApp1SM_WakeUp(void){
     LcdCommand(LCD_CLEAR_CMD);
-    LcdMessage(LINE1_START_ADDR+7, "Wake Milo");
-    LcdMessage(LINE2_START_ADDR + 10, "Up!");
+    LcdMessage(LINE1_START_ADDR+6, "Wake Milo");
+    LcdMessage(LINE2_START_ADDR + 9, "Up!");
     LedOn(BLUE);
     UserApp1_pfStateMachine = UserApp1SM_WaitingScreenP;
       
@@ -218,15 +301,41 @@ static void UserApp1SM_WakeUp(void){
 static void UserApp1SM_Idle(void)
 {
 
-    
-    if((WasButtonPressed(BUTTON1) | WasButtonPressed(BUTTON0)))
+    // if (win == 1){
+    //   LcdCommand(LCD_CLEAR_CMD);
+
+    //   LcdMessage(LINE1_START_ADDR, "    Good Job!");
+    //   LcdMessage(LINE2_START_ADDR + 9, "You did it!");
+    // }
+
+    if (eating == 1 && fish1 == 0){
+      //if (fish1 == 0){
+        if (WasButtonPressed(BUTTON0)){
+          ButtonAcknowledge(BUTTON0);
+          fish1 = 1;
+          UserApp1_pfStateMachine = UserApp1SM_WaitingScreenG;
+
+        }
+      }
+    // if (ate == 1){
+    //   UserApp1_pfStateMachine = UserApp1SM_WaitingScreenG;
+
+    // }
+    //}
+    else if((WasButtonPressed(BUTTON1) | WasButtonPressed(BUTTON0)))
     {
 
       ButtonAcknowledge(BUTTON0);
       ButtonAcknowledge(BUTTON1);
 
-      UserApp1_pfStateMachine = UserApp1SM_WakeUp;     
+      if (miloAwake == 1){
 
+        UserApp1_pfStateMachine = UserApp1SM_GameScreen;
+
+      }
+      else{
+        UserApp1_pfStateMachine = UserApp1SM_WakeUp;     
+      }
       }
     
     
@@ -242,6 +351,7 @@ static void UserApp1SM_Idle(void)
 
 
     }
+
 
 
 } /* end UserApp1SM_Idle() */
